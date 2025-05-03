@@ -15,22 +15,89 @@ mount(function () {
         <div class="text-white inter-600 uppercase lg:text-2xl text-center py-1">The Orbit university</div>
         <div class="bg-gradient-to-r from-black lg:from-10% via-blue-700 to-black lg:to-90% h-[1px] mt-1 lg:mt-2"></div>
     </div>
-
-    <div class="mt-12 flex justify-between">
-        <div class="min-h-full w-1/4 lg:w-1/6 bg-gradient-to-r from-blue-700/20"></div>
-        <div class="text-white text-center h-min grid grid-cols-1 gap-4">
-            <div class="lg:text-xl">
-                <span class="bg-clip-text uppercase inter-700 text-transparent bg-gradient-to-t from-10% from-blue-700 to-blue-700/50">
-                    It's true...
-                </span>
+    <!-- Hero Section -->
+    <div class=" min-h-screen overflow-hidden ">
+    <div class="relative  min-h-screen flex items-center">
+      <!-- Background canvas for particle animation -->
+      <canvas 
+        id="particle-canvas"
+        class="absolute inset-0 w-full h-full"
+      ></canvas>
+      
+      <!-- Overlay gradient for better text readability -->
+      <div class="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent"></div>
+      
+      <!-- Hero content -->
+      <div class="container mx-auto px-6 md:px-12 relative z-10">
+        <div class="max-w-4xl animate-fadeIn">
+          <div class="flex items-center mb-6 opacity-0 animate-slideUp" style="animation-delay: 0.3s; animation-fill-mode: forwards;">
+            <svg class="text-blue-400 mr-3" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+            </svg>
+            <h2 class="text-blue-400 font-semibold tracking-wide text-lg md:text-xl uppercase">The Orbit University</h2>
+          </div>
+          
+          <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 opacity-0 animate-slideUp" style="animation-delay: 0.5s; animation-fill-mode: forwards;">
+            Earn Your First $1,000 <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Online</span>
+          </h1>
+          
+          <p class="text-slate-200 text-xl md:text-2xl mb-8 max-w-3xl opacity-0 animate-slideUp" style="animation-delay: 0.7s; animation-fill-mode: forwards;">
+            An advanced EdTech platform developed by industry experts — with no prior experience, no content creation, and no startup capital required.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 opacity-0 animate-slideUp" style="animation-delay: 0.9s; animation-fill-mode: forwards;">
+            <button class="bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25 hover:scale-105 flex items-center justify-center group">
+              Start Learning Now
+              <svg class="ml-2 transition-transform duration-300 group-hover:translate-x-1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m9 18 6-6-6-6"/>
+              </svg>
+            </button>
+            <button class="bg-transparent border-2 border-slate-600 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 hover:border-slate-400">
+              Learn More
+            </button>
+          </div>
+          
+          <div class="mt-12 pt-6 border-t border-slate-700/50 grid grid-cols-1 md:grid-cols-3 gap-6 opacity-0 animate-slideUp" style="animation-delay: 1.1s; animation-fill-mode: forwards;">
+            <div class="flex items-start">
+              <div class="bg-blue-500/20 p-2 rounded-lg mr-3">
+                <div class="w-8 h-8 flex items-center justify-center text-blue-400">01</div>
+              </div>
+              <div>
+                <h3 class="text-white font-medium mb-1">No Experience Needed</h3>
+                <p class="text-slate-300 text-sm">Start from zero and follow our proven path</p>
+              </div>
             </div>
-            <div class="inter-700 lg:text-3xl">
-                24-YEAR-OLD MULTI-MILLIONAIRE GOES ROGUE <br class="max-lg:hidden"> AND REVEALS HIS SECRET "ONLINE INCOME <br class="max-lg:hidden"> SYSTEM" JUST TO PROVE ANYONE CAN MAKE <br class="max-lg:hidden"> THEIR FIRST $1,000 ONLINE WITH IT.
+            <div class="flex items-start">
+              <div class="bg-purple-500/20 p-2 rounded-lg mr-3">
+                <div class="w-8 h-8 flex items-center justify-center text-purple-400">02</div>
+              </div>
+              <div>
+                <h3 class="text-white font-medium mb-1">No Content Creation</h3>
+                <p class="text-slate-300 text-sm">Our system works without creating videos</p>
+              </div>
             </div>
-            <div class="w-full aspect-video border border-blue-500 shadow-2xl shadow-blue-500/30 rounded-xl mb-12"></div>
+            <div class="flex items-start">
+              <div class="bg-indigo-500/20 p-2 rounded-lg mr-3">
+                <div class="w-8 h-8 flex items-center justify-center text-indigo-400">03</div>
+              </div>
+              <div>
+                <h3 class="text-white font-medium mb-1">No Startup Capital</h3>
+                <p class="text-slate-300 text-sm">Begin your journey with minimal investment</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="min-h-full w-1/4 lg:w-1/6 bg-gradient-to-r from-transparent to-blue-700/20"></div>
+      </div>
+      
+      <!-- Decorative elements -->
+      <div class="absolute bottom-0 right-0 w-full h-24 bg-gradient-to-t from-black/30 to-transparent"></div>
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-blue-500/10  rounded-full blur-3xl"></div>
     </div>
+  </div>
+
+
 
     <div>
         <div class="bg-gradient-to-r from-black from-10% via-blue-700 to-black to-90% h-[1px]"></div>
