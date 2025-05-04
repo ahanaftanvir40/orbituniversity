@@ -25,7 +25,7 @@ mount(function () {
                 </span>
             </div>
             <div class="inter-700 lg:text-3xl">
-                24-YEAR-OLD MULTI-MILLIONAIRE GOES ROGUE <br class="max-lg:hidden"> AND REVEALS HIS SECRET "ONLINE INCOME <br class="max-lg:hidden"> SYSTEM" JUST TO PROVE ANYONE CAN MAKE <br class="max-lg:hidden"> THEIR FIRST $1,000 ONLINE WITH IT.
+            The Orbit University is an advanced EdTech platform <br class="max-lg:hidden"> developed by industry experts to help you earn <br class="max-lg:hidden"> your first $1,000 online — with no prior experience, <br class="max-lg:hidden"> no content creation, and no startup capital required.
             </div>
             <div class="w-full aspect-video border border-blue-500 shadow-2xl shadow-blue-500/30 rounded-xl mb-12"></div>
         </div>
@@ -116,24 +116,33 @@ mount(function () {
                 <img class="size-full rounded-xl" src="{{asset('images/home5.jpeg')}}">
             </div>
             <div class="lg:w-3/5 py-8 h-min grid grid-cols-1 gap-6 text-white inter-300 text-sm lg:text-lg">
-                <div class="text-2xl lg:text-5xl inter-700 tracking-wide leading-tight">
-                    FROM BROKE TO NOW HAVING <br> THE SECRET
+            <div class="text-2xl lg:text-5xl inter-700 tracking-wide leading-tight">
+                HOW ORBIT UNIVERSITY WAS BUILT <br> TO SOLVE A GLOBAL PROBLEM
+            </div>
+                <div>
+                    Millions waste time on broken online models. Orbit was created by <span class="inter-700">industry experts</span> to deliver what actually works.
                 </div>
                 <div>
-                    I was living with my single mom and we were surviving off of government benefits... I went on to <span class="inter-700">spend months</span> trying to find the perfect online business model...
-                </div>
-                <div>
-                    Sales funnels, Dropshipping, Affiliate marketing, Online apps. You name it... I've tried them all, to no avail.
+                    We've analyzed the failures of dropshipping, affiliate marketing, content creation, and countless other models that promise results but rarely deliver.
                 </div>
                 <div class="inter-700">
-                    I know exactly what is working today.
+                    We know exactly what's working in today's digital economy.
                 </div>
                 <div>
-                    And right now, I'm looking for a selected group of young individuals who aspire to create an online income and make their <span class="inter-700">first $1,000 over the next few weeks......</span>
+                    Our mission is to help a selected group of motivated individuals create sustainable online income and earn their <span class="inter-700">first $1,000 without the usual pitfalls and wasted time...</span>
                 </div>
                 <div>
-                    ...To share the exact same secrets I've applied to make my first million online.
+                    ...By providing proven systems that have already generated millions in online revenue.
                 </div>
+
+                <!-- <div class="flex justify-between text-center px-2 py-3  rounded-lg">
+                    <div class="inter-600">"Made $1,200 in 2 months."</div>
+                    <div class="inter-600">|</div>
+                    <div class="inter-600">"Quit my job in 3."</div>
+                    <div class="inter-600">|</div>
+                    <div class="inter-600">"Most actionable training ever."</div>
+                </div> -->
+
                 <div class="bg-red-700 rounded-lg text-center cursor-pointer p-4 inter-600">
                     YES! GIVE ME ACCESS NOW
                 </div>
@@ -148,11 +157,11 @@ mount(function () {
             <div class="inter-500 tracking-widest my-2">A STEP-BY-STEP PATH</div>
             <div class="h-min grid grid-cols-1 gap-8">
                 <div class="text-white inter-700 text-3xl lg:text-4xl">
-                    2024 IS YOUR LAST <span class="underline decoration-wavy underline-offset-8 decoration-4 decoration-white/50">CHANCE</span>
+                    The World Is Changing Fast. <span class="underline decoration-wavy underline-offset-8 decoration-4 decoration-white/50">Are You Prepared?</span>
                 </div>
                 <div>
-                    The world will change forever in 2024.<br>
-                    They are developing more ways to <span class="inter-800 text-white">trap you.</span>
+                AI is redefining work. Digital currencies are reshaping economies.<br>
+                Orbit University helps you adapt and build income <span class="inter-800 text-white"> before these shifts leave you behind.</span>
                 </div>
                 <div>
                     Al is taking jobs, and Central Bank Digital Currencies are just around the corner.
@@ -174,11 +183,11 @@ mount(function () {
         <div class="text-white text-center h-min grid grid-cols-1 gap-4">
             <div class="text-sm lg:text-xl">
                 <span class="uppercase inter-700 text-blue-700">
-                    MY OBJECTIVE HERE IS SIMPLE...
+                At Orbit University,
                 </span>
             </div>
             <div class="inter-800 text-lg md:text-2xl lg:text-4xl">
-                HELPING YOU UNF*CK YOUR LIFE BY <br> SHOWING YOU WHAT NOT TO DO... AND <br> THEN GIVING YOU 3 PATHS TO MAKE <br> YOUR FIRST $1,000 ONLINE IN RECORD <br> TIME.
+            Our mission is to empower individuals <br> with the tools, mentorship, and systems <br> they need to create real income <br> in the digital economy.
             </div>
             <div class="flex justify-center"><img class="md:w-4/5 lg:w-1/2 aspect-video" src="{{asset('images/home1.webp')}}"></div>
         </div>
