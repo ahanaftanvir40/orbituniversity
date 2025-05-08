@@ -32,9 +32,9 @@ mount(function () {});
 ?>
 
 <div class="w-full grow flex flex-col gap-8 relative" x-data="{ height: 0 }" x-resize="height = $height">
-    <div class="absolute inset-x-0 overflow-y-auto flex flex-col sm:gap-10 py-10 pr-4" :style="'height: ' + height + 'px;'">
+    <div class="absolute inset-x-0 overflow-y-auto flex flex-col sm:gap-10 py-6 px-3 sm:py-10 pr-4" :style="'height: ' + height + 'px;'">
         <div class="flex max-sm:flex-col sm:justify-between gap-8">
-            <div class="sm:w-full rounded-2xl flex flex-col gap-3 p-6  ">
+            <div class="sm:w-full rounded-2xl flex flex-col gap-3 p-4 sm:p-[68px] border border-blue-600 relative after:content-[''] after:absolute after:inset-0 after:rounded-2xl after:border-2 after:border-blue-400/50 after:blur-[2px] after:z-[-1] shadow-[0_0_8px_rgba(59,130,246,0.3)]">
                 <div class='flex justify-around'>
                     <div class='Income  sm:w-3/4'>
                         <div class="text-white inter-300  sm:text-3xl">Your Referal Income</div>
@@ -42,7 +42,7 @@ mount(function () {});
                     </div>
                     <div>
                     <div class="text-white inter-300 sm:text-3xl">Leaderboard</div>
-                        <div class='Users sm:mt-5 mt-2 text-xl'>
+                        <div class='Users sm:mt-5 mt-2 sm:text-xl'>
                             <div class='flex justify-around '>
                                 <div class="text-white inter-300">User 1</div>
                                 <div class="text-white inter-300">20$</div>
@@ -89,7 +89,7 @@ mount(function () {});
                 </div>
             </div> -->
         </div>
-        <div class='MAIN flex flex-col md:flex-row gap-4 sm:mt-20 '>
+        <div class='MAIN flex flex-col md:flex-row gap-4 py-8 sm:py-0 '>
             <!-- Left Column -->
             <div class="w-full md:w-1/2 flex flex-col gap-4">
                 <!-- Notes Board -->
