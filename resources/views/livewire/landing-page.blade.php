@@ -35,7 +35,7 @@ mount(function () {
     <livewire:home />
     @elseif(in_array($path,['dashboard','program','setting','admin','add-program','video','add-video','zen-mode','leaderboards']))
     <livewire:web-app.toastr-popup />
-    <div class="h-full flex justify-between gap-4 sm:gap-8">
+    <div class="h-full flex justify-between gap-2 sm:gap-6">
         <div class="w-min sm:w-1/4 h-full">
             <livewire:web-app.side-bar :path="$path" />
         </div>

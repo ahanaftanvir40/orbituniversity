@@ -39,7 +39,7 @@ mount(function ($path) {
                 <div class="text-center max-sm:hidden">{{$user->email}}</div>
             </div>
         </div>
-        <div class="grow relative border border-blue-600 py-5 rounded-2xl after:content-[''] after:absolute after:inset-0 after:rounded-2xl after:border-2 after:border-blue-400/50 after:blur-[2px] after:z-[-1] shadow-[0_0_8px_rgba(59,130,246,0.3)]" x-data="{ height: 0 }" x-resize="height = $height">
+        <div class="grow relative sm:border border-blue-600 py-5 rounded-2xl sm:after:content-[''] sm:after:absolute sm:after:inset-0 sm:after:rounded-2xl sm:after:border-2 sm:after:border-blue-400/50 sm:after:blur-[2px] sm:after:z-[-1] sm:shadow-[0_0_8px_rgba(59,130,246,0.3)]" x-data="{ height: 0 }" x-resize="height = $height">
             <div class="overflow-y-auto absolute inset-x-0 px-3" :style="'height: ' + height + 'px;'">
                 <div class="grid grid-cols-1 gap-3">
                     <a href="/dashboard" wire:navigate>
