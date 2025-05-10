@@ -136,25 +136,25 @@ mount(function() {
                     </form>
                 </div>
                 
-                <!-- Leaderboard Table -->
+               <!-- Leaderboard Table -->
                 <div class="border border-blue-600 rounded-2xl overflow-hidden relative after:content-[''] after:absolute after:inset-0 after:rounded-2xl after:border-1 after:border-blue-400/50 after:blur-[2px] after:z-[-1] shadow-[0_0_8px_rgba(59,130,246,0.3)]">
                     <div class="max-h-[400px] sm:max-h-[500px] md:max-h-[600px] overflow-y-auto">
                         <div class="overflow-x-auto">
-                            <table class="w-full text-left min-w-[600px]">
+                            <table class="w-full text-center min-w-[600px]">
                                 <thead class="bg-black border-b border-blue-600 sticky top-0 z-10">
                                     <tr>
-                                        <th class="p-2 sm:p-3 md:p-4 font-semibold text-gray-300 text-sm sm:text-base">Rank</th>
-                                        <th class="p-2 sm:p-3 md:p-4 font-semibold text-gray-300 text-sm sm:text-base">User</th>
-                                        <th class="p-2 sm:p-3 md:p-4 font-semibold text-gray-300 text-sm sm:text-base">Courses Done</th>
-                                        <th class="p-2 sm:p-3 md:p-4 font-semibold text-gray-300 text-sm sm:text-base">Videos Watched</th>
-                                        <th class="p-2 sm:p-3 md:p-4 font-semibold text-gray-300 text-sm sm:text-base">Badges</th>
+                                        <th class="p-2 sm:p-3 md:p-4 font-semibold text-gray-300 text-sm sm:text-base text-center">Rank</th>
+                                        <th class="p-2 sm:p-3 md:p-4 font-semibold text-gray-300 text-sm sm:text-base text-center">User</th>
+                                        <th class="p-2 sm:p-3 md:p-4 font-semibold text-gray-300 text-sm sm:text-base text-center">Courses Done</th>
+                                        <th class="p-2 sm:p-3 md:p-4 font-semibold text-gray-300 text-sm sm:text-base text-center">Videos Watched</th>
+                                        <th class="p-2 sm:p-3 md:p-4 font-semibold text-gray-300 text-sm sm:text-base text-center">Badges</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @foreach($leaderboardData as $user)
                                     <tr class="{{ $loop->even ? 'bg-white bg-opacity-[0.03]' : '' }} hover:shadow-[0_0_8px_rgba(0,191,255,0.5)] relative">
-                                        <td class="px-4 sm:px-6 md:px-8 py-2 sm:py-3 text-sm sm:text-base">{{ $user['rank'] }}</td>
-                                        <td class="px-2 py-2 sm:py-3 flex items-center space-x-2 text-sm sm:text-base">
+                                        <td class="p-2 sm:p-3 md:p-4 text-sm sm:text-base text-center">{{ $user['rank'] }}</td>
+                                        <td class="p-2 sm:p-3 flex items-center justify-center space-x-2 text-sm sm:text-base">
                                             <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center font-bold text-black 
                                                 {{ $user['avatar'] == 'yellow' ? 'bg-[#FFC107]' : '' }}
                                                 {{ $user['avatar'] == 'purple' ? 'bg-[#BB86FC]' : '' }}
@@ -166,9 +166,9 @@ mount(function() {
                                             </div>
                                             <span>{{ $user['username'] }}</span>
                                         </td>
-                                        <td class="p-2 sm:p-3 md:p-4 text-sm sm:text-base">{{ $user['courses_done'] }}</td>
-                                        <td class="p-2 sm:p-3 md:p-4 text-sm sm:text-base">{{ $user['videos_watched'] }}</td>
-                                        <td class="p-2 sm:p-3 md:p-4 text-sm sm:text-base">
+                                        <td class="p-2 sm:p-3 md:p-4 text-sm sm:text-base text-center">{{ $user['courses_done'] }}</td>
+                                        <td class="p-2 sm:p-3 md:p-4 text-sm sm:text-base text-center">{{ $user['videos_watched'] }}</td>
+                                        <td class="p-2 sm:p-3 md:p-4 text-sm sm:text-base text-center">
                                             @if($loop->first)
                                                 @for($i = 0; $i < min($user['badges'], 1); $i++)
                                                     ⭐
