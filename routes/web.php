@@ -16,6 +16,7 @@ Volt::route('/video', 'landing-page')->name('video');
 Volt::route('/add-video', 'landing-page')->name('add-video');
 Volt::route('/zen-mode', 'landing-page')->name('zen-mode');
 Volt::route('/leaderboards', 'landing-page')->name('leaderboards');
+Volt::route('/orbit-space', 'landing-page')->name('orbit-space');
 
 Route::post('/upload-file', [FileUploadController::class, 'store']);
 Route::post('/upload-video', [FileUploadController::class, 'storeVideo']);
