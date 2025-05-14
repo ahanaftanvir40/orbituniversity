@@ -5,8 +5,8 @@ use function Livewire\Volt\{state, mount};
 ?>
 
 
-<div class="main mt-4 sm:mt-12">
-    <div class="max-w-full mx-auto px-4 py-8  flex flex-col justify-center items-center">
+<div class="main grow">
+    <div class="max-w-full mx-auto px-4 py-4  flex flex-col justify-center items-center">
         <div class='header text-[#00BFFF] w-fit  mx-auto'>
             <h1 class='text-5xl text-center inter-400 tracking-wide '>EVENTS & LIVE SESSIONS</h1>
         </div>

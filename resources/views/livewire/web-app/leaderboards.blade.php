@@ -170,8 +170,8 @@ mount(function() {
 
 ?>
 
-<div class="sm:border mb-4 sm:mt-4 py-4 {{ $activeTab == 'earners' ? 'sm:pb-[88px]' : 'sm:pb-[145px]' }} border-blue-600 rounded-2xl mx-3 text-white font-sans sm:relative sm:after:content-[''] sm:after:absolute sm:after:inset-0 sm:after:rounded-2xl sm:after:border-2 sm:after:border-blue-400/50 sm:after:blur-[2px] sm:after:z-[-1] sm:shadow-[0_0_8px_rgba(59,130,246,0.3)]">
-    <div class="container mx-auto px-4 sm:px-6 md:px-8 py-4 sm:py-6 md:py-8 w-full">
+<div class="grow sm:border mb-4  mt-4 border-blue-600 rounded-2xl mx-3 text-white font-sans sm:relative sm:after:content-[''] sm:after:absolute sm:after:inset-0 sm:after:rounded-2xl sm:after:border-2 sm:after:border-blue-400/50 sm:after:blur-[2px] sm:after:z-[-1] sm:shadow-[0_0_8px_rgba(59,130,246,0.3)]">
+    <div class="grow container mx-auto px-4 sm:px-6 md:px-8 py-4 sm:py-6 md:py-8 w-full">
         <!-- Page Header -->
         <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">{{ $activeTab == 'earners' ? 'Top Earner Leaderboard' : 'Top Learner Leaderboard' }}</h1>
 
