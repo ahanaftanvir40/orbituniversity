@@ -33,7 +33,7 @@ mount(function () {
 <div class="h-dvh">
     @if($path == '/')
     <livewire:home />
-    @elseif(in_array($path,['dashboard','program','setting','admin','add-program','video','add-video','zen-mode','leaderboards', 'orbit-space']))
+    @elseif(in_array($path,['dashboard','program','setting','admin','add-program','video','add-video','zen-mode','leaderboards', 'orbit-space','events']))
     <livewire:web-app.toastr-popup />
     <div class="h-full flex justify-between gap-2 sm:gap-6">
         <div class="w-min sm:w-1/4 h-full">
@@ -54,6 +54,8 @@ mount(function () {
             <livewire:web-app.leaderboards />
             @elseif($path == 'orbit-space')
             <livewire:web-app.orbit-space />
+            @elseif($path == 'events')
+            <livewire:web-app.events />
             @elseif($path == 'add-program')
             <livewire:web-app.admin.add-program />
             @elseif($path == 'video')
